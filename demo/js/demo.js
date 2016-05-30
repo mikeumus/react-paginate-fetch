@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactPaginate from 'react-paginate';
 import $ from 'jquery';
+// var fetch = require('node-fetch');
 
 window.React = React;
 
@@ -69,6 +70,13 @@ export class App extends Component {
 				console.error(this.props.url, status, err.toString());
 			}
 		});
+		
+		// TODO: refactor into fetch()
+		// ?limit=10&offset=10
+		// fetch(`${this.props.url}?limit=${this.props.perPage}&offset=${this.state.offset}`)
+		// 	.then( data => {
+		// 		this.setState({data: data.photos, pageNum: Math.ceil(data.meta.total_count / data.meta.limit)});
+		// 	}).catch( err => console.error(err));
 	}
 
 	componentDidMount() {
