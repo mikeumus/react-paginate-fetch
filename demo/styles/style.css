@@ -3,10 +3,10 @@
 	padding-left: 15px;
 	padding-right: 15px;
 }
+	#react-paginate li {display: inline-block;}
+	#react-paginate .break a {cursor: default;}
 
-#react-paginate li {display: inline-block;}
-
-#react-paginate .break a {cursor: default;}
+.pagination>li>a:hover{cursor: pointer;}
 
 .modal-img{width: 100%;}
 
