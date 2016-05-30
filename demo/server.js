@@ -43,7 +43,6 @@ fetch('http://jsonplaceholder.typicode.com/albums/1/photos')
 		return res.json();
 	}).then(function(json) {
 		jsonfile.writeFile(DATA, json, function (err) {
-		  console.log(json);
 		  console.error(err);
 		});
 	}).catch(function(reason){
